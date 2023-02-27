@@ -8,6 +8,5 @@ let input = Number(prompt(' inserisci un numero'));
 if ((input % 2) === 0){
     console.log(input);
 } else {
-    input ++;
-    console.log(input);
+    console.log(input + 1);
 }
