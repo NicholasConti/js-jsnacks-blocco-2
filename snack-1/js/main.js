@@ -8,7 +8,11 @@ Esegui questo programma in due versioni, con il for e con il while.
 let somma = 0;
 for(let i = 0 ; i < 5; i++){
     const numero = Number(prompt('Inserisci un numero'));
-    somma += numero;
+    if(!isNaN(numero)){
+        somma += numero;
+    } else {
+        i--;
+    }
 }
 
 console.log(somma);
@@ -19,8 +23,10 @@ let x = 0 ;
 
 while( x < 5){
     const numero = Number(prompt('Inserisci un numero'));
-    somma += numero;
-    x++;
+    if(!isNaN(numero)){
+        somma += numero;
+        x++;
+    }
 
 }
 console.log(somma);
